@@ -5,9 +5,4 @@ phases:
         python: 3.8
   build:
     commands:
-      aws lambda create-function \
-      --function-name HelloWorldLambdaPipeline \
-      --runtime python3.8 \
-      --zip-file fileb://helloworld.zip \
-      --handler helloworld.lambda_handler \
-      --role arn:aws:iam::821383200340:role/AWS-Serverless-KatiMitja
+      aws lambda create-function --function-name HelloWorldLambdaPipeline --runtime python3.8 --zip-file fileb://helloworld.zip --handler helloworld.lambda_handler --role arn:aws:iam::821383200340:role/AWS-Serverless-KatiMitja
